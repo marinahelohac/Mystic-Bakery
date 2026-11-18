@@ -1,0 +1,179 @@
+/* 1. Reset básico: tira as margens tortas que o navegador coloca sozinho */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* 2. Fundo da página (cor de creme/baunilha rosado bem fofo!) */
+body {
+    background-color: #FFF5F7;
+    color: #4A252C;
+    /* Marrom avermelhado escuro para o texto ficar suave */
+    display: flex;
+    justify-content: center;
+    /* Centraliza tudo na horizontal */
+    align-items: center;
+    /* Centraliza na vertical */
+    min-height: 100vh;
+    /* Faz o fundo ocupar 100% da altura da tela */
+    padding: 20px;
+}
+
+/* 3. O cartão principal do formulário */
+.container {
+    background-color: #FFFFFF;
+    width: 100%;
+    max-width: 850px;
+    /* Largura elegante, nem fina nem gigante */
+    padding: 35px;
+    /* Espaço interno para os textos "respirarem" */
+    border-radius: 24px;
+    /* Cantos bem arredondados (segredo do visual fofo!) */
+    box-shadow: 0 10px 30px rgba(114, 24, 39, 0.12);
+    /* Sombrinha cor de vinho */
+    border: 2px solid #F8D7DA;
+    /* Borda rosinha pastel delicada */
+}
+
+/* 4. Estilizando o Cabeçalho e a Logo */
+.header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.logo img {
+    width: 300px;
+    /* Tamanho ideal para a logo */
+    height: 150px;
+    object-fit: cover;
+    /* Não deixa a imagem ficar esticada/achatada */
+    border-radius: 50%;
+    /* Deixa a logo redondinha igual um selo! */
+    border: 3px solid #721827;
+    /* Borda vinho Salvatore */
+    margin-bottom: 10px;
+    box-shadow: 0 4px 12px rgba(114, 24, 39, 0.2);
+}
+
+.header span {
+    display: inline-block;
+    background-color: #FCE4EC;
+    /* Etiqueta rosinha pastel */
+    color: #721827;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 4px 12px;
+    border-radius: 20px;
+    margin-bottom: 8px;
+}
+
+.header h1 {
+    color: #721827;
+    /* Vinho elegante para o nome da padaria */
+    font-size: 28px;
+    margin-bottom: 4px;
+}
+
+.header p {
+    color: #8E5A65;
+    font-size: 14px;
+}
+
+/* 5. Títulos das seções (Dados Pessoais / Dados Profissionais) */
+h3 {
+    color: #721827;
+    font-size: 16px;
+    border-bottom: 2px dashed #F8D7DA;
+    /* Linha pontilhada fofa */
+    padding-bottom: 6px;
+    margin: 20px 0 15px 0;
+}
+
+/* 6. Caixinhas de digitar (Inputs e Select) */
+.campo {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    /* Coloca o texto em cima e a caixa embaixo */
+}
+
+.campo label {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #5C2B35;
+}
+
+.campo input[type="text"],
+.campo input[type="email"],
+.campo input[type="tel"],
+.campo input[type="number"],
+.campo select {
+    padding: 12px 14px;
+    border: 1.5px solid #F3C6CE;
+    border-radius: 12px;
+    /* Cantos arredondados nas caixinhas */
+    background-color: #FFFDFD;
+    font-size: 14px;
+    color: #4A252C;
+    outline: none;
+    transition: all 0.3s ease;
+    /* Deixa a mudança de cor suave */
+}
+
+/* Efeito mágico quando a pessoa clica dentro da caixa para digitar! */
+.campo input:focus,
+.campo select:focus {
+    border-color: #721827;
+    box-shadow: 0 0 0 3px rgba(114, 24, 39, 0.12);
+}
+
+/* 7. Opções de Turno (Radio Buttons fofos!) */
+.opcoes-turno {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background-color: #FFF8F9;
+    padding: 12px 15px;
+    border-radius: 12px;
+    border: 1.5px solid #F3C6CE;
+}
+
+.opcoes-turno label {
+    font-weight: normal;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+/* 8. Botão de Cadastrar (Estilo Salvatore!) */
+.btn-cadastrar {
+    width: 100%;
+    padding: 14px;
+    margin-top: 10px;
+    background-color: #721827;
+    /* Vinho elegante */
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Efeito quando passa o mouse por cima do botão */
+.btn-cadastrar:hover {
+    background-color: #922235;
+    transform: translateY(-2px);
+    /* Dá um pulinho fofo para cima! */
+}
+
+/* 9. Rodapé */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+    color: #8E5A65;
+}
